@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  test-python:
+    build: .
+    tty: true
+    working_dir: '/root/'
+    ports:
+      - '127.0.0.1:8080:8080'
+    volumes:
+      - ./:/root/opt
